@@ -3,14 +3,15 @@ import Helmet from "react-helmet";
 
 import Layout from '../components/layout';
 
-import pic01 from '../assets/images/pic01.jpg'
+import poly from '../assets/images/poly.jpg'
+import polyLogo from '../assets/images/polytechnique_gauche_rgb.png'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Gatsby Starter - Photon";
+        const siteTitle = "Nicolas Bayard";
 
         return (
             <Layout>
@@ -20,13 +21,13 @@ class Homepage extends React.Component {
                     <div className="grid-wrapper">
                         <div className="col-6">
                             <header className="major">
-                                <h2>Lorem ipsum dolor adipiscing<br />
-                                amet dolor consequat</h2>
+                                <span className="image fit"><img src={polyLogo} alt="" /></span>
                             </header>
-                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                            <p>Currently in my last year of <strong>Bachelor of Computer Engineering</strong><br/> 
+                            Expected graduation: December 2020</p>
                         </div>
                         <div className="col-6">
-                            <span className="image fit"><img src={pic01} alt="" /></span>
+                            <span className="image fit"><img src={poly} alt="" /></span>
                         </div>
                     </div>
                 </section>
